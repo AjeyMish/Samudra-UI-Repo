@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="197" height="197" viewBox="0 0 197 197">
+  <defs>
+    <filter id="Rectangle_71" x="0" y="0" width="197" height="197" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feFlood flood-color="#493594" flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="brand-logo" transform="translate(-847 -1973)">
+    <g transform="matrix(1, 0, 0, 1, 847, 1973)" filter="url(#Rectangle_71)">
+      <rect id="Rectangle_71-2" data-name="Rectangle 71" width="161" height="161" rx="20" transform="translate(18 18)" fill="#493594"/>
+    </g>
+    <g id="logo" transform="translate(1138.813 1871.6)">
+      <text id="Samudra" transform="translate(-255.813 176.4)" fill="#fff" font-size="34" font-family="NimbusSan-Reg, Nimbus Sans" letter-spacing="-0.041em"><tspan x="0" y="30">Sam</tspan><tspan y="30" fill="#ff1c73">u</tspan><tspan y="30">dra</tspan></text>
+      <rect id="Rectangle_142" data-name="Rectangle 142" width="1.987" height="1.987" rx="0.993" transform="translate(-186.951 196.131)" fill="#ff1c73"/>
+      <rect id="Rectangle_143" data-name="Rectangle 143" width="1.987" height="1.987" rx="0.993" transform="translate(-186.951 198.78)" fill="#ff1c73"/>
+      <rect id="Rectangle_144" data-name="Rectangle 144" width="1.987" height="1.987" rx="0.993" transform="translate(-184.302 196.131)" fill="#ff1c73"/>
+      <rect id="Rectangle_145" data-name="Rectangle 145" width="1.987" height="1.987" rx="0.993" transform="translate(-184.302 198.78)" fill="#ff1c73"/>
+      <rect id="Rectangle_149" data-name="Rectangle 149" width="1.987" height="1.987" rx="0.993" transform="translate(-184.302 193.482)" fill="#ff1c73"/>
+      <rect id="Rectangle_147" data-name="Rectangle 147" width="1.987" height="1.987" rx="0.993" transform="translate(-186.951 193.482)" fill="#ff1c73"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,343 @@
+@charset "utf-8";
+/* ODMS CSS Document */
+
+/* BASE COLORS AND FONTS*/
+
+:root {
+  	--key-color: rgb(255, 3, 252);
+  	--key-light: rgba(94, 3, 252, 0.1);
+	--key-hover: #b30059;
+	--key-focus: #ff4da6;
+	--hero-color: rgb(252, 61, 3);
+	--hero-light: rgba(252, 61, 3, 0.1);
+	--neutral-black: #000000;	
+	--neutral-dark: #333333;
+	--neutral-mid-dark: #606060;	
+	--neutral-mid: #808080;
+	--neutral-mid-light: #A0A0A0;	
+	--neutral-light: #F8F8F8;
+	--neutral-white: #ffffff;
+	--font-family: halantregular;
+}
+
+/*FOUNDATION*/
+body{ font-family: var(--font-family), sans-serif; font-size: 16px; color: var(--neutral-dark); padding-top: 4em;
+	/* @include media-breakpoint-up(md) { 
+        font-size:40px;
+    } */
+}
+
+/*TYPERYTHM*/
+label:not(.form-check-label){font-weight:400; font-size: 0.8em; color: var(--neutral-mid); text-transform: uppercase; letter-spacing: 0.16em;}
+h1{font-weight: 900; font-size: 2.4em;}
+h2{font-weight: 400; font-size: 2em;}
+h3{font-weight: 400; font-size: 1.8em;}
+h4{font-weight: 400; font-size: 1.4em;}
+h5{font-weight: 900; font-size: 1.2em;}
+h6{font-weight: 900; font-size: 1em;}
+p{font-weight: 400; font-size: 1em;}
+ul>li, li{}
+small{font-weight:400; font-size: 0.8em;}
+del{margin: 0 1em; color: var(--hero-color); word-break: keep-all;}
+a:hover{text-decoration: none;}
+
+/*VISUAL FEEDBACK*/
+a{color:var(--key-color);}
+a:hover{color:var(--key-hover);}
+input[type=text]:focus{border-color: var(--key-color);}
+
+/*LAYER MODELS*/
+.drawer{z-index: 101;}
+.brander{z-index: 100;}
+header{z-index: 99;}
+.page, footer{z-index: 98;}
+
+/*SPACES*/
+.form-check, .form-check-inline, .form-control, .group{margin-bottom: 1em;}
+
+/*COMPONENTS*/
+header{
+	display: flex;
+	align-items: center;
+	box-sizing: border-box;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.08);
+	position: fixed;
+	width: 100%;
+	height: 4em;
+	top: 0px;
+	background-color:var(--neutral-white);
+	border-bottom: 1px solid #ccc;
+}
+#footer-business{
+	box-sizing: border-box;
+	width: 100%;
+	padding: 1em 0;
+	background-color:var(--neutral-dark);
+	color: var(--neutral-mid);
+	text-transform: uppercase;
+}
+#footer-odms{
+	box-sizing: border-box;
+	width: 100%;
+	padding: 0.8em 0;	
+	background-color:var(--neutral-black);
+	color: var(--neutral-mid);	
+}
+.drawer{
+	box-sizing: border-box;
+	position: fixed;
+	right:0px;
+	top:0px;
+	height: 100vh;
+	width: 100%; max-width: 20em;
+	background-color: var(--neutral-white);
+	display:none;
+	transition: 4s;
+	color:var(--neutral-mid-light);
+	box-shadow: -8px 0px 4px rgba(0, 0, 0, 0.08);
+}
+.skin-key{
+	box-sizing: border-box;
+	background-color: var(--key-light);
+}
+.skin-hero{
+	box-sizing: border-box;	
+	background-color: var(--hero-light);
+}
+.segment{
+	box-sizing: border-box;	
+	margin-bottom: 2em;
+}
+.segment-title{
+	margin-bottom: 1em;
+}
+.badge{
+	background-color: var(--hero-color);
+	color: var(--neutral-white);
+	padding: 0,4em;
+	border-radius: 4px;
+	text-align: center;
+	font-weight: 400; font-size: 1em;
+}
+.brander{
+	position: absolute;
+	width: auto;
+	height: 100px;
+	padding: 1em;
+	background-color: white;
+	top:-8px;
+	box-shadow: 8px 8px 0px rgba(0,0,0,0.16);
+	border-radius: 0 0 8px 8px;
+	border:1px solid var(--neutral-light);
+}
+
+
+/*CONDITIONS*/
+#footer-business a, #footer-odms a{margin-right: 1em; color: var(--neutral-mid); }
+
+/*THEMER*/
+.brandlogo{background-image: url("../brand/brandlogo-1-1.png"); background-repeat: no-repeat; background-position: center center; background-size: contain; }
+.alert-warning{ background-color: var(--key-color);}
+.btn-primary{ background-color:var(--key-color); border-color: var(--key-color);}
+.btn-primary:hover{ background-color:var(--key-hover); border-color: var(--key-hover);}
+.btn-primary:active{ background-color:var(--hero-color); border-color: var(--key-hover);}
+.btn-secondary{background-color:var(--neutral-white); border-color: var(--key-color); color:var(--key-color);}
+.btn-secondary:hover{background-color:var(--neutral-light); border-color: var(--key-color); color:var(--key-color);}
+
+
+.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .show > .btn-primary.dropdown-toggle {
+    color: #fff;
+    background-color: var(--key-color);;
+    border-color: var(--key-color);
+}
+
+.form-control:focus {
+  border-color: var(--key-color);
+  box-shadow: 0 0 8px var(--key-hover);
+}
+select option:hover {
+	background-color: aqua;
+    box-shadow: 0 0 10px 100px #1882A8 inset;
+}
+
+/*OVERRIDES*/
+.form-control {color: var(--neutral-dark); border: solid 1px var(--neutral-mid-light);}
+.modal-content{ padding: 2em 2em 0 2em;}
+.modal-footer{margin-top: 2em;}
+.form-check{padding-left: 0px;}
+.quantifier .form-control{ border-color: var(--key-color); max-width:3.4em; }
+.quantifier .form-control:focus{ box-shadow: none; }
+
+input[type="checkbox"], input[type="radio"], input[type="checkbox"]:active, input[type="radio"]:active, input[type="checkbox"]:focus, input[type="radio"]:focus, select, option{
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	-ms-appearance: none;
+	-webkit-user-select: none;
+  	-moz-user-select: none;
+  	-ms-user-select: none;	
+	outline: none;
+}
+
+input[type="checkbox"], input[type="radio"]{
+	position: relative;
+	width: 1.6em;
+	height: 1.6em;
+	background: #FFFFFF;
+	border:1px solid var(--neutral-mid-light);
+	border-radius: 4px;
+	text-align: center;
+	margin-right: 1em;
+}
+input[type="radio"]{
+	border-radius: 50%;
+	text-align: center;
+}
+input[type="checkbox"]::after{
+	content: "✔";
+	position: relative;
+	color: white;
+}
+input[type="radio"]::after{
+	content: "●";
+	position: relative;
+	color: white;
+}
+input[type="checkbox"]:checked, input[type="radio"]:checked{
+	background-color:var(--key-color);
+	color: white;
+	outline: none;
+}
+
+option:hover{
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	-ms-appearance: none;
+	background-color: black;
+	outline: none;
+}
+
+/* FontFace */
+
+/* product sans font */
+@font-face {
+    font-family: 'product_sansregular';
+    src: url('../fonts/fontface/productsans/productsans-regular.woff2') format('woff2'),
+         url('../fonts/fontface/productsans/productsans-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/* halant font */
+@font-face {
+    font-family: 'halantregular';
+    src: url('../fonts/fontface/halant/halant-regular-webfont.woff2') format('woff2'),
+         url('../fonts/fontface/halant/halant-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/* helvetica font */
+@font-face {
+    font-family: 'Helvetica400';
+    src: url('../fonts/fontface/helvetica/Helvetica400.eot');
+    src: url('../fonts/fontface/helvetica/Helvetica400.eot') format('embedded-opentype'),
+         url('../fonts/fontface/helvetica/Helvetica400.woff2') format('woff2'),
+         url('../fonts/fontface/helvetica/Helvetica400.woff') format('woff'),
+         url('../fonts/fontface/helvetica/Helvetica400.ttf') format('truetype'),
+         url('../fonts/fontface/helvetica/Helvetica400.svg#Helvetica400') format('svg');
+}
+/* maven pro font */
+@font-face {
+    font-family: 'maven_proregular';
+    src: url('../fonts/fontface/mavenpro/mavenpro-variablefont_wght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/* montserrat */
+@font-face {
+    font-family: 'montserratregular';
+    src: url('../fonts/fontface/montserrat/montserrat-regular-webfont.woff2') format('woff2'),
+         url('../fonts/fontface/montserrat/montserrat-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/* poppins regular */
+@font-face {
+    font-family: 'poppinsregular';
+    src: url('../fonts/fontface/poppins/poppins-regular-webfont.woff2') format('woff2'),
+         url('../fonts/fontface/poppins/poppins-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/* source sans pro */
+@font-face {
+    font-family: 'SourceSansProRegular';
+    src: url('../fonts/fontface/sourcesanspro/SourceSansProRegular.eot');
+    src: url('../fonts/fontface/sourcesanspro/SourceSansProRegular.eot') format('embedded-opentype'),
+         url('../fonts/fontface/sourcesanspro/SourceSansProRegular.woff2') format('woff2'),
+         url('../fonts/fontface/sourcesanspro/SourceSansProRegular.woff') format('woff'),
+         url('../fonts/fontface/sourcesanspro/SourceSansProRegular.ttf') format('truetype'),
+         url('../fonts/fontface/sourcesanspro/SourceSansProRegular.svg#SourceSansProRegular') format('svg');
+}
+/* lato */
+@font-face {
+    font-family: 'latoregular';
+    src: url('../fonts/fontface/lato/lato-regular-webfont.woff2') format('woff2'),
+         url('../fonts/fontface/lato/lato-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/* raleway */
+@font-face {
+    font-family: 'RalewayRegular';
+    src: url('../fonts/fontface/raleway/RalewayRegular.eot');
+    src: url('../fonts/fontface/raleway/RalewayRegular.eot') format('embedded-opentype'),
+         url('../fonts/fontface/raleway/RalewayRegular.woff2') format('woff2'),
+         url('../fonts/fontface/raleway/RalewayRegular.woff') format('woff'),
+         url('../fonts/fontface/raleway/RalewayRegular.ttf') format('truetype'),
+         url('../fonts/fontface/raleway/RalewayRegular.svg#RalewayRegular') format('svg');
+}
+/* roboto slab */
+@font-face {
+    font-family: 'RobotoSlabRegular';
+    src: url('../fonts/fontface/robotoslab/RobotoSlabRegular.eot');
+    src: url('../fonts/fontface/robotoslab/RobotoSlabRegular.eot') format('embedded-opentype'),
+         url('../fonts/fontface/robotoslab/RobotoSlabRegular.woff2') format('woff2'),
+         url('../fonts/fontface/robotoslab/RobotoSlabRegular.woff') format('woff'),
+         url('../fonts/fontface/robotoslab/RobotoSlabRegular.ttf') format('truetype'),
+         url('../fonts/fontface/robotoslab/RobotoSlabRegular.svg#RobotoSlabRegular') format('svg');
+}
+/* Play fair display */
+@font-face {
+    font-family: 'PlayfairDisplayRegular';
+    src: url('../fonts/fontface/playfairdisplay/PlayfairDisplayRegular.eot');
+    src: url('../fonts/fontface/playfairdisplay/PlayfairDisplayRegular.eot') format('embedded-opentype'),
+         url('../fonts/fontface/playfairdisplay/PlayfairDisplayRegular.woff2') format('woff2'),
+         url('../fonts/fontface/playfairdisplay/PlayfairDisplayRegular.woff') format('woff'),
+         url('../fonts/fontface/playfairdisplay/PlayfairDisplayRegular.ttf') format('truetype'),
+         url('../fonts/fontface/playfairdisplay/PlayfairDisplayRegular.svg#PlayfairDisplayRegular') format('svg');
+}
+
+
+/* media query */
+/* Extra large devices (large desktops, 1200px and small) */
+@media (max-width: 1200px) {
+	body{font-size: 14px;  }
+}
+/* Large devices (desktops, 992px and small) */
+@media (max-width: 992px) { body{font-size: 14px;  } }
+/* Medium devices (tablets, 768px and small) */
+@media (max-width: 768px) { body{font-size: 14px;  } }
+ /* Medium devices (mobiles, 576px and small) */
+@media (max-width: 576px) { body{font-size: 13px;  }}
+
+
+
+
+
+
+
+
