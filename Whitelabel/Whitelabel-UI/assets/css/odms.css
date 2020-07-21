@@ -4,12 +4,12 @@
 /* BASE COLORS AND FONTS*/
 
 :root {
-  	--key-color: rgb(255, 3, 252);
-  	--key-light: rgba(94, 3, 252, 0.1);
+  	--key-color: rgb(255, 3, 252,1);
+  	--key-light: rgb(255, 3, 252,0.16); 
 	--key-hover: #b30059;
 	--key-focus: #ff4da6;
 	--hero-color: rgb(252, 61, 3);
-	--hero-light: rgba(252, 61, 3, 0.1);
+	--hero-light: rgba(252, 61, 3);
 	--neutral-black: #000000;	
 	--neutral-dark: #333333;
 	--neutral-mid-dark: #606060;	
