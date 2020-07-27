@@ -1,0 +1,150 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icofont/icomoon.eot?puiaio');
+  src:  url('../fonts/icofont/icomoon.eot?puiaio#iefix') format('embedded-opentype'),
+    url('../fonts/icofont/icomoon.ttf?puiaio') format('truetype'),
+    url('../fonts/icofont/icomoon.woff?puiaio') format('woff'),
+    url('../fonts/icofont/icomoon.svg?puiaio#icomoon') format('svg');
+ 
+}
+
+.icomoonfont {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.iconbreakfast:before {
+  content: "\e929";
+}
+.iconbiryani:before {
+  content: "\e91c";
+}
+.icondosa:before {
+  content: "\e91d";
+}
+.iconbread:before {
+  content: "\e91e";
+}
+.iconbeverages:before {
+  content: "\e91f";
+}
+.iconlunch:before {
+  content: "\e920";
+}
+.icondesserts:before {
+  content: "\e921";
+}
+.iconItalian:before {
+  content: "\e922";
+}
+.iconchinese:before {
+  content: "\e923";
+}
+.iconfat-free:before {
+  content: "\e924";
+}
+.icontea:before {
+  content: "\e925";
+}
+.iconcoffee:before {
+  content: "\e926";
+}
+.iconsnack:before {
+  content: "\e927";
+}
+.icondinner:before {
+  content: "\e928";
+}
+.iconalert:before {
+  content: "\e900";
+}
+.iconarrow-left:before {
+  content: "\e901";
+}
+.iconarrow-right:before {
+  content: "\e902";
+}
+.iconnotification:before {
+  content: "\e903";
+}
+.iconcheck-circle:before {
+  content: "\e904";
+}
+.iconchevron-down:before {
+  content: "\e905";
+}
+.iconchevron-left:before {
+  content: "\e906";
+}
+.iconchevron-right:before {
+  content: "\e907";
+}
+.iconchevron-up:before {
+  content: "\e908";
+}
+.iconclock:before {
+  content: "\e909";
+}
+.iconcurrent-location:before {
+  content: "\e90a";
+}
+.iconcredit-card:before {
+  content: "\e90b";
+}
+.iconmenu-list:before {
+  content: "\e90c";
+}
+.iconlike:before {
+  content: "\e90d";
+}
+.iconinfo:before {
+  content: "\e90e";
+}
+.iconlocation:before {
+  content: "\e90f";
+}
+.iconmenu:before {
+  content: "\e910";
+}
+.iconminus:before {
+  content: "\e911";
+}
+.iconmore-vertical:before {
+  content: "\e912";
+}
+.iconphone:before {
+  content: "\e913";
+}
+.iconplus:before {
+  content: "\e914";
+}
+.iconsearch:before {
+  content: "\e915";
+}
+.iconsettings:before {
+  content: "\e916";
+}
+.iconshare:before {
+  content: "\e917";
+}
+.iconshopping-cart:before {
+  content: "\e918";
+}
+.iconfilters:before {
+  content: "\e919";
+}
+.iconstar:before {
+  content: "\e91a";
+}
+.iconuser:before {
+  content: "\e91b";
+}
